@@ -1,0 +1,65 @@
+/* Basic reset for body */
+body {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  background-image: url("Images/stopwatch.jpg"); /* Optional background color */
+}
+
+/* Style for the inner box */
+.inner-box {
+  border: 2px solid #666;
+  padding: 20px;
+  background-image: url("Images/stop2.jpg"); /* Replace with your inner box image */
+  background-size: cover; /* Cover the entire inner box */
+  background-position: center; /* Center the image */
+  text-align: center; /* Center text */
+}
+
+/* Style for the display */
+#display {
+  font-size: 2em;
+  margin: 20px 0;
+  color: black; /* Change text color for visibility */
+}
+
+/* Style for the buttons */
+.buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .inner-box {
+    padding: 15px; /* Reduce padding */
+  }
+
+  #display {
+    font-size: 1.5em; /* Reduce font size */
+  }
+
+  .buttons button {
+    padding: 8px 10px; /* Reduce button padding */
+    font-size: 0.9em; /* Reduce button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .inner-box {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  #display {
+    font-size: 1.2em; /* Further reduce font size */
+  }
+
+  .buttons button {
+    padding: 5px 8px; /* Further reduce button padding */
+    font-size: 0.8em; /* Further reduce button font size */
+  }
+}
